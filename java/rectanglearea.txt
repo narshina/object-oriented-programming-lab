@@ -1,0 +1,12 @@
+class Rectangle 
+{
+    public static void main(String args[])
+    {
+        int rb=4,sqs=5,sqa=0,rpe=0,rl;
+        sqa=sqs*sqs;
+        rl=sqa/rb;
+        rpe=2*(rl+rb);
+        System.out.println("area of rectangle:"+sqa);
+        System.out.println("perimeter of rectancle:"+rpe);
+    }
+}
