@@ -1,0 +1,40 @@
+import java.util.Scanner;
+class Product
+{
+    int pcode,price;
+    string pname;
+    void Read()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the code:");
+        pcode=sc.nextInt();
+        System.out.println("enter the name:");
+        pname=sc.next();
+        System.out.println("enter the price:");
+        price=sc.nextInt();
+    }
+}
+class Main1
+{
+    public static void main(string[]args)
+    {
+        product a=new Product();
+        product b=new Product();
+        product c=new Product();
+        a.Read();
+        b.Read();
+        c.Read();
+        if((a.price<b.price) &&(a.price<c.price))
+        {
+            System.out.println("product with pcode:"+a.pcode+",product name:"+a.name+"has the lowest price:"+a.price);
+        }
+        else if((b.price<a.price)&&(b.price<c.price))
+        {
+            System.out.println("product with pcode:"+b.pcode+",product name:"+b.name+"has the lowest price:"+b.price);
+        }
+        else
+        {
+            System.out.println("product with pcode:"+c.pcode+",product name:"+c.name+"has the lowest price:"+c.price);
+        }
+    }
+}
