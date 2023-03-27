@@ -1,0 +1,80 @@
+import java.util.Scanner;
+class Symmetric
+{
+public static void main(String args[])
+{
+Scanner input = new Scanner(System.in);
+System.out.println("Please enter number of rows:\t");
+int row = input.nextInt();
+System.out.println("Please enter number of columns:\t");
+int col = input.nextInt();
+int[][] x= new int[row][col];
+System.out.println("Please enter matrix:\n");
+for(int m=0;m<row;m++)
+{
+for(int n=0;n<col;n++)
+{
+x[m][n] = input.nextInt();
+}
+}
+System.out.println("The matrix:\n");
+for(int m=0;m<row;m++)
+{
+for(int n=0;n<col;n++)
+{
+System.out.print(x[m][n] + "\n");
+}
+System.out.println();
+}
+     
+System.out.println("The matrix after transpose:");
+for(int m=0;m<col;m++)
+{
+for(int n=0;n<row;n++)
+{
+System.out.print(x[n][m] + "\n");
+}
+System.out.println();
+}
+int i;
+for(i=1;i<2;i++)
+{
+if (row==col)
+{
+System.out.println("!!Matrix is a square matrix!!");
+}
+else
+{
+System.out.println("!!Not a square matrix.\nHence not Symmetric!! ");
+break;
+}
+}
+int[][] y=new int[row][col];
+for(int m=0;m<col;m++)
+{
+for(int n=0;n<row;n++)
+{
+y[n][m]=x[n][m];
+}
+}
+int k=0;
+for(int m=0;m<row;m++)
+{ 
+for(int n=0;n<col;n++)
+{
+if (y[m][n]==x[m][n])  
+{
+k=1;
+}
+}
+}
+if (k==1)
+{
+System.out.println("!!The matrix is  Symmetric");
+}
+else
+{
+System.out.println("!!Matrix is not Symmetric!!");
+}
+}
+}
