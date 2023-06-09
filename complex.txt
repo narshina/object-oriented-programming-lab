@@ -1,0 +1,37 @@
+import java.util.Scanner;
+class ComplexNum
+{
+int r,i;
+ComplexNum(int r,int i)
+{
+this.r=r;
+this.i=i;
+}
+ComplexNum addComp(ComplexNum c1,ComplexNum c2)
+{
+ComplexNum temp=new ComplexNum(0,0);
+temp.r=c1.r+c2.r;
+temp.i=c1.i+c2.i;
+return temp;
+}
+}
+class Main
+{
+public static void main(String[]args)
+{
+Scanner scanner=new Scanner(System.in);
+System.out.println("enter the real part of first complex number:");
+int r1=scanner.nextInt();
+System.out.println("enter the imaginary part of the first number:");
+int i1=scanner.nextInt();
+System.out.println("enter the real part of the second complex number:");
+int r2=scanner.nextInt();
+System.out.println("enter the imaginary part of the second number:");
+int i2=scanner.nextInt();
+ComplexNum c1=new ComplexNum(r1,i1);
+ComplexNum c2=new ComplexNum(r2,i2);
+ComplexNum c3=new ComplexNum(0,0);
+c3=c3.addComp(c1,c2);
+System.out.println(c3.r+"+"+c3.i+"i");
+}
+}
