@@ -1,0 +1,47 @@
+import java.util.Scanner;
+class Student
+{
+int rollno;
+String name;
+int mark;
+public Student()
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the rollno:");
+rollno=sc.nextInt();
+System.out.println("enter the name:");
+name=sc.next();
+System.out.println("enter the mark:");
+mark=sc.nextInt();
+}
+class Sports
+{
+String sports_name;
+int activity_point;
+public Sports()
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("enter sports name:");
+sports_name=sc.next();
+System.out.println("enter the avtivity point:");
+activity_point=sc.nextInt();
+}
+void show()
+{
+System.out.println("rollno:"+rollno);
+System.out.println("naame:"+name);
+System.out.println("mark:"+mark);
+System.out.println("sports name:"+sports_name);
+System.out.println("activity points:"+activity_point);
+}
+}
+}
+class Main
+{
+public static void main(String args[])
+{
+Student b=new Student();
+Student.Sports b1=b.new Sports();
+b1.show();
+}
+}
