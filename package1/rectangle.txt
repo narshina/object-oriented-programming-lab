@@ -1,5 +1,9 @@
 package Graphics;
 import java.util.Scanner;
+interface Area
+{
+public void read();
+}
 public class Rect
 {
 public void read()
