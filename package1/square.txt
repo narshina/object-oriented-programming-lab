@@ -1,0 +1,17 @@
+package Graphics;
+import java.util.Scanner;
+interface Area
+{
+public void read();
+}
+public class Squ
+{
+public void read()
+{
+System.out.println("enter the lenght of squre:");
+Scanner sc=new Scanner(System.in);
+int l=sc.nextInt();
+int a=l*l;
+System.out.println("area of square is:"+a);
+}
+}

@@ -1,0 +1,19 @@
+package Graphics;
+import java.util.Scanner;
+interface Area
+{
+public void read();
+}
+public class Tri
+{
+public void read()
+{
+System.out.println("enter the lenght of triangle:");
+Scanner sc=new Scanner(System.in);
+int l=sc.nextInt();
+System.out.println("enter the height of trianle:");
+int h=sc.nextInt();
+double a=l*h;
+System.out.println("area of triangle is:"+a);
+}
+}

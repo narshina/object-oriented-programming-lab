@@ -1,0 +1,16 @@
+import Graphics.*;
+import java.util.Scanner;
+class Main4
+{
+public static void main(String args[])
+{
+Graphics.Rect r1=new Graphics.Rect();
+Graphics.Circle c1=new Graphics.Circle();
+Graphics.Squ s1=new Graphics.Squ();
+Graphics.Tri t1=new Graphics.Tri();
+r1.read();
+c1.read();
+s1.read();
+t1.read();
+}
+}
